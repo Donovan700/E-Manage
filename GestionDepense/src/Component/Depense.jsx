@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 function Depense() {
     return (
         <>
@@ -14,10 +15,31 @@ function Depense() {
                 </ul>
             </nav>
             <div>
-                <h1>Hello I'm Depense</h1>
+                <Link to="/add/depense"><button class="add">+ Add outcome</button></Link>
+                <h2 class="Total">Total Outcomes: { TotalOutcome() }<br/>Total Costs: { TotaltCost() } Ar</h2>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>Id</td>
+                        <td>User</td>
+                        <td>Designation</td>
+                        <td>Categories</td>
+                        <td>Cost</td>
+                        <td>Date</td>
+                        <td>Options</td>
+                    </tr>
+                </table>
             </div>
         </>
     )
+}
+
+function TotalOutcome() {
+    return 0
+}
+function TotaltCost() {
+    return 0
 }
 
 export default Depense

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Categorie() {
+function AddCategorie() {
     return (
         <>
             <nav>
@@ -14,19 +14,20 @@ function Categorie() {
                 </ul>
             </nav>
             <div>
-                <Link to="/add/categorie"><button class="add">+ Add Categories</button></Link>
+                <h1 class="title-show">Let's add some Categories</h1>
+                <h3 class="blabla">Add some categories to add some varieties to your application</h3>
+                <button class="StyleWhy">Why ?</button>
+                <button class="StyleMore">More...</button>
             </div>
             <div>
-                <table>
-                    <tr>
-                        <td>Id</td>
-                        <td>Designation</td>
-                        <td>Options</td>
-                    </tr>
-                </table>
+                <form class="CatForm">
+                    <legend id="CatTitle">CATEGORIES FORM</legend>
+                    <input type="text" name='CatName' id="CatName" placeholder='Designation' />
+                    <button class="CatAdd">Add</button>
+                </form>
             </div>
         </>
     )
 }
 
-export default Categorie
+export default AddCategorie
